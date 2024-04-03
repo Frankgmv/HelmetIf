@@ -1,11 +1,17 @@
-.banner{
+a {
+    text-decoration: none;
+}
+
+.banner {
     width: 99vw;
     position: relative;
-    height: 500px;
+    height: 400px;
     object-fit: fill;
 }
 
-.banner .banner-img, .banner-fondo, .banner-content{
+.banner .banner-img,
+.banner-fondo,
+.banner-content {
     position: absolute;
 }
 
@@ -33,7 +39,7 @@
     backdrop-filter: blur(1px);
 }
 
-.banner-title::first-letter{
+.banner-title::first-letter {
     font-size: 1.4em;
 }
 
@@ -52,3 +58,50 @@
     font-size: 1.3em;
 }
 
+@media screen and (width <=690px) {
+    .banner {
+        height: 280px;
+    }
+
+    .banner-title {
+        font-size: 1.7em;
+    }
+
+    .banner-descripcion {
+        width: 70%;
+        font-size: 1.4em;
+    }
+
+}
+
+.stack-tech {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.stack-tech h3 {
+    font-size: 2em;
+    color: var(--fucsia);
+}
+
+.stack-tech .container-tech {
+    display: flex;
+    gap: 10px;
+}
+
+.container-tech .tech {
+    list-style-type: none;
+    padding: 4px;
+}
+
+.footer {
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.664);
+    height: 20px;
+    font-size: .75em;
+}

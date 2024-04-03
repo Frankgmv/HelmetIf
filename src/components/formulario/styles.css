@@ -1,0 +1,125 @@
+.formulario {
+    margin: 40px 0px;
+    width: 90%;
+    transform: translateX(5%);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formtag,
+.explicacion {
+    width: 45%;
+}
+
+.formtag {
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--fucsia);
+}
+
+.container-groups {
+    width: 80%;
+    transform: translateX(10%);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-group-button {
+    margin-top: 25px;
+    display: grid;
+    place-items: center;
+}
+
+.input-group input::placeholder {
+    color: rgb(196, 175, 175);
+}
+
+.input-group select {
+    color: rgb(196, 175, 175);
+}
+
+.input-group input,
+select {
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    transform: translateX(5%);
+    margin: 6px 0px;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid var(--fucsia);
+    outline: none;
+    border-radius: 2px;
+}
+
+.alerta {
+    width: 70%;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.219);
+    border-radius: 5px;
+    margin: 0px auto;
+}
+
+input:focus {
+    background-color: #00000049;
+    border-radius: 4px;
+}
+
+select option {
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+select option:hover {
+    background-color: #ccc;
+}
+
+.submit {
+    background-color: var(--fucsia);
+    border: none;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.submit:hover {
+    background-color: white;
+    color: var(--fucsia);
+}
+
+.explicacion-content {
+    padding-left: 20px;
+    text-align: center;
+
+}
+
+.explicacion-content h1 {
+    color: var(--fucsia);
+}
+
+.explicacion-content p {
+    text-align: justify;
+}
+
+@media screen and (width < 488px) {
+
+    .formtag,
+    .explicacion {
+        width: 100%;
+    }
+
+    .formtag{
+        order: 2;
+    }
+    .explicacion{
+        order: 1;
+    }
+}

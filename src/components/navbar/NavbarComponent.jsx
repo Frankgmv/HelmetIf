@@ -4,18 +4,18 @@ const NavbarComponent = () => {
         <>
             <nav className="nav">
                 <div className="nav-title">
-                    <h1 className="title">Portafolio Dev</h1>
+                    <h1 className="title">SENA devs</h1>
                 </div>
-
                 <div className="container-items">
-                    <div className='items'><a href="#">devs</a></div>
-                    <div className='items'><a href="#formulario-contacto">contacto</a></div>
-                    <div className='items'><a href="#stack-tech">stack tecnológico</a></div>
-                    <div className='items tip-container'>
-                        <span className="tip">F</span>
-                        <span className="tip">K</span>
-                        <span className="tip">J</span>
+                    <div className="items dropdown">
+                        <a className="dropbtn" href='#'>desarrolladores</a>
+                        <div className="dropdown-content">
+                            <a href="./frank">Frank</a>
+                            <a href="./kevin">Kevin</a>
+                            <a href="./jesus">Jesus</a>
+                        </div>
                     </div>
+                    <div className='items'><a href="#formulario-contacto">contacto</a></div>
                 </div>
             </nav>
         </>

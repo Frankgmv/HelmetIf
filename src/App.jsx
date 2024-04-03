@@ -7,7 +7,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/*" element={<HomePage />} />
-        <Route path="/*" element={<h2>404 - Ruta No Econtrada</h2>}/>
       </Routes>
     </BrowserRouter>
   )

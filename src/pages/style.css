@@ -6,12 +6,12 @@ a {
     width: 99vw;
     position: relative;
     height: 400px;
-    object-fit: fill;
 }
 
 .banner .banner-img,
 .banner-fondo,
 .banner-content {
+    object-fit: cover;
     position: absolute;
 }
 

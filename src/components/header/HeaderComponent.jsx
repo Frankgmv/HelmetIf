@@ -5,7 +5,7 @@ const HeaderComponent = () => {
         <header className='header'>
             <NavbarComponent />
             <div className="banner">
-                <img src="../../public/fondo-carreteaa.jpg" alt="img-banner" className="banner-img" />
+                <img src="/fondo-dev.png" alt="img-banner" className="banner-img" />
                 <div className="banner-fondo"></div>
                 <div className="banner-content">
                     <div className="banner-title">SENA dev&apos;s </div>

@@ -1,37 +1,51 @@
+import { useForm } from 'react-hook-form'
 import './styles.css'
+import toastr from '../../assets/includes/toastr';
+
 const FormularioComponent = () => {
-  const handleContact = (e) => {
-    e.preventDefault();
-    console.log(e.currentTarget)
+  const emailPattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  const { register, handleSubmit, formState: { errors }, reset } = useForm()
+
+  const handleContact = async (data) => {
+    console.log(data)
+    toastr.success("Email enviado correctamente")
+    reset()
+
   }
+
   return (
     <>
-      <form method="POST" className='formtag' onSubmit={handleContact} id="formulario-contacto">
+      <form method="POST" className='formtag' onSubmit={handleSubmit(handleContact)} id="formulario-contacto">
         <div className="container-groups">
           <div className="input-group">
-            <input type="text" placeholder='Correo' name="correo" id="correo" />
-            {/* // ! alertas para mostrar errores */}
-            {/* <span className="alerta">alerta error</span> */}
+            <input {...register('correo', {
+              required: 'Su correo es requerido', pattern: {
+                value: emailPattern,
+                message: 'El correo electrónico no es válido'
+              }
+            })} type="text" placeholder='Correo' name="correo" id="correo" />
+            {errors.correo && <span className="alerta">{errors.correo.message}</span>}
           </div>
           <div className="input-group">
-            <select name="desarrollador" defaultValue="0">
-              <option value="0">Contactar a</option>
+            <select {...register('desarrollador', { required: "Seleccione el desarrollador" })} name="desarrollador" defaultValue="0">
+              <option value="">Contactar a</option>
               <option value="fgmv08@gmail.com">Frank</option>
               <option value="kevin06092005@gmail.com">Kevin</option>
               <option value="jonathansanchez1612@gmail.com">Jesus</option>
             </select>
             {/* // ! alertas para mostrar errores */}
-            {/* <span className="alerta">alerta error</span> */}
+            {errors.desarrollador && <span className="alerta">{errors.desarrollador.message}</span>}
           </div>
           <div className="input-group">
-            <input type="text" placeholder='Asunto' name="asunto" id="asunto" />
+            <input {...register('asunto', { required: "EL asunto es requerido" })} type="text" placeholder='Asunto' name="asunto" id="asunto" />
             {/* // ! alertas para mostrar errores */}
-            {/* <span className="alerta">alerta error</span> */}
+            {errors.asunto && <span className="alerta">{errors.asunto.message}</span>}
           </div>
           <div className="input-group">
-            <input type="text" placeholder='Mensaje' name="mensaje" id="mensaje" />
+            <input {...register('mensaje', { required: "el mensaje es requerido" })} type="text" placeholder='Mensaje' name="mensaje" id="mensaje" />
             {/* // ! alertas para mostrar errores */}
-            {/* <span className="alerta">alerta error</span> */}
+            {errors.mensaje && <span className="alerta">{errors.mensaje.message}</span>}
           </div>
           <div className="input-group input-group-button">
             <button className='submit'>Enviar contacto</button>

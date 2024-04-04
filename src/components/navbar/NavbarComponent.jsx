@@ -8,7 +8,7 @@ const NavbarComponent = () => {
                 </div>
                 <div className="container-items">
                     <div className="items dropdown">
-                        <a className="dropbtn" href='./frank'>desarrolladores</a>
+                        <a className="dropbtn" href='#'>desarrolladores</a>
                         <div className="dropdown-content">
                             <a href="./frank">Frank</a>
                             <a href="./kevin">Kevin</a>

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import './style.css'
 const ContentComponent = ({path, titulo, contenido, cabezera, pie, link}) => {
 
     return (

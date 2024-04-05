@@ -55,7 +55,7 @@ const FormularioComponent = () => {
       <div className="explicacion">
         <div className="explicacion-content">
           <h1>Contacto</h1>
-          <p>EL formulario que tienes a al vista es para contactar a los desarrolladores mostrados en cada una de sus secciones personales.</p>
+          <p>El formulario que tienes a al vista es para contactar a los desarrolladores mostrados en cada una de sus secciones personales.</p>
           <p>Para contactar a alguno de los desarrolladores solo tienes que rellenar los campos en el formulario, seleccionar el desarrollador que te interesa conteactar y enviar el formulario.</p>
           <p>Muchas gracias por vistarnos.</p>
         </div>

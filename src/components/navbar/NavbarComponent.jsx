@@ -15,7 +15,7 @@ const NavbarComponent = () => {
                             <a href="./jesus">Jesus</a>
                         </div>
                     </div>
-                    <div className='items'><a href="/#formulario-contacto">contacto</a></div>
+                    <div className='items'><a className='a-item' href="/#formulario-contacto">contacto</a></div>
                 </div>
             </nav>
         </>

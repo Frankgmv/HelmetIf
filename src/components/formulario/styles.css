@@ -17,6 +17,11 @@
     padding: 20px;
     border-radius: 5px;
     border: 2px solid var(--fucsia);
+    transition: all .5s ease-in-out;
+}
+
+.formtag:hover{
+    background-color: #0303037a;
 }
 
 .container-groups {

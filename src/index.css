@@ -15,7 +15,7 @@ html {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
+    --black-2: #242424;
     --black: #1d1d1dff;
     --white: #ebebebff;
     --fucsia: #b679f6ff;

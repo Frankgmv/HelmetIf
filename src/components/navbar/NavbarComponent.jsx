@@ -4,7 +4,7 @@ const NavbarComponent = () => {
         <>
             <nav className="nav">
                 <div className="nav-title">
-                    <h1 className="title">SENA devs</h1>
+                    <h1 className="title">SENA dev&apos;s</h1>
                 </div>
                 <div className="container-items">
                     <div className="items dropdown">
@@ -12,7 +12,6 @@ const NavbarComponent = () => {
                         <div className="dropdown-content">
                             <a href="./frank">Frank</a>
                             <a href="./kevin">Kevin</a>
-                            <a href="./jesus">Jesus</a>
                         </div>
                     </div>
                     <div className='items'><a className='a-item' href="/#formulario-contacto">contacto</a></div>

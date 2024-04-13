@@ -7,13 +7,15 @@ const HomeComponent = () => {
                 <FormularioComponent />
             </div>
             <div className="stack-tech" id="stack-tech">
-                <h3>Tecnologías implementadas</h3>
+                <h3>Conoce los creadores</h3>
                 <ul className="container-tech">
-                    <li className="tech"><a target="_blank" href="https://react-hook-form.com/"> React-Hook-form</a></li>
-                    <li className="tech"><a target="_blank" href="https://resend.com/"> Resend</a></li>
-                    <li className="tech"><a target="_blank" href="https://remixicon.com/"> Remix-Icon</a></li>
-                    <li className="tech"><a target="_blank" href="https://ngx-toastr.vercel.app/"> Toastr</a></li>
+                    <li className="tech"><a href="./frank"> Frank</a></li>
+                    <li className="tech"><a href="./kevin"> Kevin</a></li>
                 </ul>
+            </div>
+            <div className="stack-tech" style={{fontSize: '.7em'}} id="stack-tech">
+                <h3>Desarrolladores es divertidos!!!</h3>
+                <h3 style={{marginLeft: '20px'}}>(*/ω＼*)</h3>
             </div>
         </main>
     )

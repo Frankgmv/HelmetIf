@@ -57,6 +57,7 @@ a {
 .banner-descripcion {
     font-size: 1.3em;
     width: 50%;
+    text-align: justify;
 }
 
 .banner-descripcion::first-letter {
@@ -89,7 +90,7 @@ a {
 }
 
 .stack-tech h3 {
-    font-size: 2em;
+    font-size: 1.2em;
     color: var(--fucsia);
 }
 
@@ -101,6 +102,10 @@ a {
 .container-tech .tech {
     list-style-type: none;
     padding: 4px;
+}
+
+.container-tech .tech:hover a {
+    color: aquamarine;
 }
 
 .footer {

@@ -67,12 +67,12 @@
     transform: rotateY(-180deg);
 }
 
-.container-text a{
+.container-text a {
     text-decoration: none;
     color: var(--font-text);
 }
 
-.container-text a:hover{
+.container-text a:hover {
     color: var(--fucsia);
 }
 
@@ -114,5 +114,15 @@
     .container-img img {
         border-radius: 20px 20px 20px 20px;
     }
-}
+    .content:nth-child(even) .container-text {
+        border-radius: 20px 20px 20px 20px;
+        transform: rotateY(-180deg);
+    }
 
+
+    .content:nth-child(even) .container-img img {
+        border-radius: 20px 20px 20px 20px;
+        transform: rotateY(-180deg);
+    }
+
+}

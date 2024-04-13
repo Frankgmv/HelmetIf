@@ -7,7 +7,7 @@ toastr.options = {
     "showDuration": "300",
     "closeButton": true,
     "hideDuration": "1000",
-    "timeOut": "5000",
+    "timeOut": "15000",
     "preventDuplicates": true
 }
 

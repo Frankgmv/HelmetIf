@@ -8,6 +8,7 @@ const FormularioComponent = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm()
 
   const handleContact = async (data) => {
+    toastr.clear()
     toastr.error("Email no se pudo enviar")
     toastr.info(`Envia el correo a: ${data.desarrollador}`)
     setTimeout(()=>{

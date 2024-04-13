@@ -9,7 +9,7 @@ const FormularioComponent = () => {
 
   const handleContact = async (data) => {
     toastr.clear()
-    toastr.error("Email no se pudo enviar")
+    toastr.warning("Email no se pudo enviar")
     toastr.info(`Envia el correo a: ${data.desarrollador}`)
     setTimeout(()=>{
       reset()

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './style.css'
 const NavbarComponent = () => {
     return (
@@ -10,11 +11,11 @@ const NavbarComponent = () => {
                     <div className="items dropdown">
                         <a className="dropbtn" href='#'>desarrolladores</a>
                         <div className="dropdown-content">
-                            <a href="./frank">Frank</a>
-                            <a href="./kevin">Kevin</a>
+                            <Link to="./frank">Frank</Link>
+                            <Link to="./kevin">Kevin</Link>
                         </div>
                     </div>
-                    <div className='items'><a className='a-item' href="/#formulario-contacto">contacto</a></div>
+                    <div className='items'><Link className='a-item' to="/">contacto</Link></div>
                 </div>
             </nav>
         </>

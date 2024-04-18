@@ -10,13 +10,13 @@ const HomeComponent = () => {
             <div className="stack-tech" id="stack-tech">
                 <h3>Conoce los creadores</h3>
                 <ul className="container-tech">
-                    <li className="tech"><Link href="./frank"> Frank</Link></li>
-                    <li className="tech"><Link href="./kevin"> Kevin</Link></li>
+                    <li className="tech"><Link to="./frank"> Frank</Link></li>
+                    <li className="tech"><Link to="./kevin"> Kevin</Link></li>
                 </ul>
             </div>
             <div className="stack-tech" style={{fontSize: '.7em'}} id="stack-tech">
-                <h3>Desarrolladores es divertidos!!!</h3>
-                <h3 style={{marginLeft: '20px'}}>(*/ω＼*)</h3>
+                <h3>Crear es divertido!!!</h3>
+                <h3 style={{marginLeft: '20px'}}>^_^</h3>
             </div>
         </main>
     )

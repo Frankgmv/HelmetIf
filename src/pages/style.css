@@ -88,7 +88,7 @@ a {
 
 .stack-tech h3 {
     font-size: 1.7rem;
-    color: var(--purple-base);
+    color: var(--purple-70);
 }
 
 .stack-tech .container-tech {
@@ -98,12 +98,17 @@ a {
 
 .container-tech .tech {
     list-style-type: none;
-    padding: 4px;
+    padding: .4rem;
     font-size: 1.6rem;
 }
 
+.container-tech .tech a {
+    color: var(--orange-70);
+    font-size: var(--h3-size);
+}
+
 .container-tech .tech:hover a {
-    color: aquamarine;
+    color: var(--white);  
 }
 
 .footer {

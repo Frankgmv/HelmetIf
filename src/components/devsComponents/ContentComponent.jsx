@@ -5,7 +5,10 @@ const ContentComponent = ({path, titulo, contenido, cabezera, pie, link}) => {
     return (
         <section className="content">
             <div className="container-text">
-                <p className="text-bridge"><b className="line">------</b> {cabezera}</p>
+                {
+
+                 cabezera && <p className="text-bridge"><b>------</b> {cabezera}</p>
+                }
                 <h2 className="text-title">{titulo}</h2>
                 <p className="text-description">{contenido}</p>
                 <p className="text-bridge"><a href={link} target='_blank'>{pie} </a><b className="line">-------</b></p>
@@ -27,7 +30,6 @@ ContentComponent.propTypes = {
 };
 
 ContentComponent.defaultProps = {
-    cabezera: "Dev's",
     link: "",
     pie: "Read More"
 };

@@ -2,26 +2,44 @@ import { useForm } from 'react-hook-form'
 import './styles.css'
 import toastr from '../../assets/includes/toastr';
 
+
+
 const FormularioComponent = () => {
   const emailPattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
+  
   const { register, handleSubmit, formState: { errors }, reset } = useForm()
 
+  const sendEmail = async (to, subject, text) => {
+    const data = {
+      from: 'fgmv08@gmail.com',
+      to,
+      subject,
+      text,
+    };
+
+    console.log(data);
+    // Enviar datos
+  };
+
   const handleContact = async (data) => {
+    // console.log(data)
+    sendEmail(data.desarrollador, `${data.correo} | ${data.asunto}`, data.mensaje)
     toastr.clear()
     toastr.warning("Email no se pudo enviar")
     toastr.info(`Envia el correo a: ${data.desarrollador}`)
-    setTimeout(()=>{
+    setTimeout(() => {
       reset()
     }, 15000)
   }
+
+
 
   return (
     <>
       <form method="POST" className='formtag' onSubmit={handleSubmit(handleContact)} id="formulario-contacto">
         <div className="container-groups">
           <div className="input-group">
-            <input {...register('correo', {
+            <input autoComplete='off' {...register('correo', {
               required: false, pattern: {
                 value: emailPattern,
                 message: 'El correo electrónico no es válido'
@@ -38,11 +56,11 @@ const FormularioComponent = () => {
             {errors.desarrollador && <span className="alerta">{errors.desarrollador.message}</span>}
           </div>
           <div className="input-group">
-            <input {...register('asunto', { required: false })} type="text" placeholder='Asunto' name="asunto" id="asunto" />
+            <input autoComplete='off' {...register('asunto', { required: false })} type="text" placeholder='Asunto' name="asunto" id="asunto" />
             {errors.asunto && <span className="alerta">{errors.asunto.message}</span>}
           </div>
           <div className="input-group">
-            <input {...register('mensaje', { required: false })} type="text" placeholder='Mensaje' name="mensaje" id="mensaje" />
+            <input autoComplete='off' {...register('mensaje', { required: false })} type="text" placeholder='Mensaje' name="mensaje" id="mensaje" />
             {errors.mensaje && <span className="alerta">{errors.mensaje.message}</span>}
           </div>
           <div className="input-group input-group-button">
@@ -53,9 +71,8 @@ const FormularioComponent = () => {
       <div className="explicacion">
         <div className="explicacion-content">
           <h1>Contacto</h1>
-          <p>El formulario que tienes a al vista es para contactar a los desarrolladores mostrados en cada una de sus secciones personales.</p>
-          <p>Para contactar a alguno de los desarrolladores solo tienes que rellenar los campos en el formulario, seleccionar el desarrollador que te interesa conteactar y enviar el formulario.</p>
-          <p>Muchas gracias por vistarnos.</p>
+          <p>Puedes contactar a cada uno de los desarrolladores mostrados en sus secciones personales. </p>
+          <p>Gracias por vistarnos.</p>
         </div>
       </div>
     </>

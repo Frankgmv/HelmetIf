@@ -2,7 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -10,7 +9,7 @@ a {
 .banner {
     width: 99vw;
     position: relative;
-    height: 400px;
+    height: 350px;
 }
 
 .banner .banner-img,
@@ -42,40 +41,37 @@ a {
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(1px);
+    font-size: var(--subtitle-size);
 }
 
 .banner-title::first-letter {
-    font-size: 1.4em;
+    font-size: calc(var(--h1-size) + .5rem);
 }
 
 .banner-title {
-    font-size: 2.4em;
+    font-size: var(--h1-size);
     font-weight: bold;
     letter-spacing: 2px;
 }
 
 .banner-descripcion {
-    font-size: 1.3em;
     width: 50%;
-    text-align: justify;
+    text-align: center;
+}
+
+.banner-recall {
+    width: 50%;
+    text-align: center;
 }
 
 .banner-descripcion::first-letter {
-    font-size: 1.3em;
+    font-size: calc(var(--subtitle-size) + .5rem);
 }
 
 @media screen and (width <=690px) {
     .banner {
         height: 280px;
-    }
-
-    .banner-title {
-        font-size: 1.7em;
-    }
-
-    .banner-descripcion {
-        width: 70%;
-        font-size: 1.4em;
+        font-size: var(--paragraph-size);
     }
 
 }
@@ -86,12 +82,12 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .stack-tech h3 {
-    font-size: 1.2em;
-    color: var(--fucsia);
+    font-size: 1.7rem;
+    color: var(--purple-base);
 }
 
 .stack-tech .container-tech {
@@ -102,6 +98,7 @@ a {
 .container-tech .tech {
     list-style-type: none;
     padding: 4px;
+    font-size: 1.6rem;
 }
 
 .container-tech .tech:hover a {
@@ -111,7 +108,25 @@ a {
 .footer {
     display: grid;
     place-items: center;
-    background-color: rgba(0, 0, 0, 0.664);
-    height: 20px;
-    font-size: .75em;
+    background-color: var(--black);
+    height: 3rem;
+    font-family: var(--font-subtitle);
+    font-size: 1.5rem;
+    color: var(--orange-70);
+    letter-spacing: .2rem;
+}
+
+
+@media screen and (width > 1500px) {
+
+
+    .contaniner-general{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
 }

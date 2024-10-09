@@ -12,7 +12,7 @@ const NavbarComponent = () => {
                         <a className="dropbtn" href='#'>desarrolladores</a>
                         <div className="dropdown-content">
                             <Link to="./frank">Frank</Link>
-                            <Link to="./kevin">Kevin</Link>
+                            <Link to="./kevin">Kevin</Link> 
                         </div>
                     </div>
                     <div className='items'><Link className='a-item' to="/">contacto</Link></div>

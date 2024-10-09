@@ -1,11 +1,10 @@
 html {
-    font-size: 15px;
+    font-size: 10px;
 }
 
 :root {
-    font-family: 'Overpass', Helvetica,  Georgia;
-    line-height: 1.5;
-    font-weight: 400;
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.3;
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
@@ -19,14 +18,97 @@ html {
     --black: #1d1d1dff;
     --white: #ebebebff;
     --fucsia: #b679f6ff;
-    --purpe: #7710e5ff;
-    --purpe-black: #32075fff;
+    --purpe: #9d3bbe;
+    --purpe-black: #6d2781;
     --green-light: rgb(102, 228, 90);
+
+}
+
+
+:root {
+    /* Tamaños de fuentes */
+    --h1-size: 3.2rem;
+    --h2-size: 2.4rem;
+    --h3-size: 2rem;
+    --h4-size: 1.6rem;
+    --h5-size: 1.4rem;
+    --h6-size: 1.2rem;
+
+    --subtitle-size: 1.6rem;
+    --paragraph-size: 1.4rem;
+
+    /* Colores principales*/
+    --black: #000000;
+    --white: #ffffff;
+
+
+    /* Scala de grises */
+    --gris-100: #313131;
+    --gris-95: #242424;
+    --gris-80: #626262 ;
+    --gris-60: #949494 ;
+    --gris-40: #C5C5C5 ;
+    --gris-20: #050101 ;
+
+    /* Escala de morados */
+    --purple-base: #b85bda;
+    --purple-10: #f6ebfc;
+    --purple-20: #edd6f8;
+    --purple-30: #e0b5f2;
+    --purple-40: #cf89e9;
+    --purple-60: #9d3bbe;
+    --purple-70: #832e9d;
+    --purple-80: #6d2781;
+    --purple-90: #572364;
+
+    /* Escalas naranja */
+
+    --orange-base: #ff8000;
+    --orange-10: #fff4d3;
+    --orange-20: #ffe5a5;
+    --orange-30: #ffd16d;
+    --orange-40: #ffb232;
+    --orange-60: #ff8000;
+    --orange-70: #cc5d02;
+    --orange-80: #a1480b;
+    --orange-90: #823d0c;
+
+    /* Tipografías */
+    --font-heading: 'Poppins', sans-serif;
+    --font-title: 'Open Sans', sans-serif;
+    --font-subtitle: 'Helvetica', sans-serif;
+    --font-paragraph: 'Roboto', sans-serif;
+    --font-variant: 'Overpass', sans-serif;
+    --font-small: 'Roboto Condensed', sans-serif;
 }
 
 @font-face {
     font-family: 'Overpass';
     src: url(/src/assets/fonts/Overpass/Overpass-VariableFont_wght.ttf);
+}
+
+/* Poppins */
+@font-face {
+    font-family: 'Poppins';
+    src: url(/src/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+/* Open Sans */
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/src/assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* Roboto */
+@font-face {
+    font-family: 'Roboto';
+    src: url(/src/assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/* Roboto Condensed */
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(/src/assets/fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf);
 }
 
 @media (prefers-color-scheme: light) {
@@ -44,14 +126,15 @@ html {
     }
 }
 
-@media screen and (890px > width ) {
+@media screen and (790px > width) {
     html {
-        font-size: 12px;
+        font-size: 8px;
     }
 }
 
-@media screen and (650px > width ) {
+
+@media screen and (400px > width) {
     html {
-        font-size: 10px;
+        font-size: 8px;
     }
 }

@@ -1,5 +1,5 @@
 .formulario {
-    margin: 40px 0px;
+    margin: 3rem 0;
     width: 90%;
     transform: translateX(5%);
     display: flex;
@@ -14,14 +14,15 @@
 }
 
 .formtag {
-    padding: 20px;
-    border-radius: 5px;
-    border: 2px solid var(--fucsia);
-    transition: all .5s ease-in-out;
+    padding: 2rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--purple-base);
+    transition: all .1s ease-in-out;
+    font-size: var(--h5-size);
 }
 
 .formtag:hover{
-    background-color: #0303037a;
+    background-color: var(--gris-100);
 }
 
 .container-groups {
@@ -37,51 +38,43 @@
 }
 
 .input-group-button {
-    margin-top: 25px;
+    margin-top: 2.5rem;
     display: grid;
     place-items: center;
 }
 
 .input-group input::placeholder {
-    color: rgb(196, 175, 175);
+    color: var(--white)
 }
 
 .input-group select {
-    color: rgb(196, 175, 175);
+    color: var(--white)
 }
 
 .input-group input,
 select {
     text-align: center;
     width: 90%;
-    padding: 5px;
+    padding: .5rem;
     transform: translateX(5%);
-    margin: 6px 0px;
+    margin: .6rem 0;
     background-color: transparent;
-    border: 0px;
-    border-bottom: 1px solid var(--fucsia);
+    border: 0;
+    border-bottom: .1rem solid var(--purple-base);
     outline: none;
-    border-radius: 2px;
-}
-
-.alerta {
-    width: 70%;
-    color: white;
-    background-color: rgba(255, 0, 0, 0.219);
-    border-radius: 5px;
-    margin: 0px auto;
+    border-radius: .2rem;
 }
 
 input:focus {
-    background-color: #00000049;
-    border-radius: 4px;
+    background-color: var(--gris-100);
+    border-radius: .4rem;
 }
 
 select option {
-    color: #000;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    padding: 5px;
+    color: var(--black);
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    padding: .5rem;
 }
 
 select option:hover {
@@ -89,25 +82,34 @@ select option:hover {
 }
 
 .submit {
-    background-color: var(--fucsia);
+    background-color: var(--purple-base);
     border: none;
-    padding: 7px;
-    border-radius: 4px;
+    padding: .7rem;
+    border-radius: .4rem;
 }
 
 .submit:hover {
     background-color: white;
-    color: var(--fucsia);
+    color: var(--purple-base);
 }
 
 .explicacion-content {
-    padding-left: 20px;
+    padding-left: 2.0rem;
+    font-size: var(--h4-size);
     text-align: center;
 
 }
 
+.alerta {
+    width: 70%;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.219);
+    border-radius: .5rem;
+    margin: 0 auto;
+}
+
 .explicacion-content h1 {
-    color: var(--fucsia);
+    color: var(--purple-base);
 }
 
 .explicacion-content p {
@@ -126,5 +128,18 @@ select option:hover {
     }
     .explicacion{
         order: 1;
+    }
+}
+
+@media screen and (width > 760px) {
+
+    
+    .formtag,
+    .explicacion {
+        width: 40%;
+    }
+
+    .formulario{
+        gap: 2rem;
     }
 }

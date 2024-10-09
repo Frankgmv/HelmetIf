@@ -6,7 +6,7 @@ import FrankComponent from "../components/devsComponents/FrankComponent"
 import KevinComponent from "../components/devsComponents/KevinComponent"
 const HomePage = () => {
     return (
-        <>
+        <div className="contaniner-general">
             <HeaderComponent />
             <Routes>
                 <Route path="/" element={<HomeComponent />} />
@@ -16,7 +16,7 @@ const HomePage = () => {
             <footer className="footer">
                 &copy; todos los derechos de reservados
             </footer>
-        </>
+        </div>
     )
 }
 

@@ -9,7 +9,7 @@ a {
 .banner {
     width: 99vw;
     position: relative;
-    height: 350px;
+    height: 310px;
 }
 
 .banner .banner-img,
@@ -52,6 +52,7 @@ a {
     font-size: var(--h1-size);
     font-weight: bold;
     letter-spacing: 2px;
+    color: var(--orange-70)
 }
 
 .banner-descripcion {

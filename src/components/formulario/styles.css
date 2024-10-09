@@ -21,8 +21,8 @@
     font-size: var(--h5-size);
 }
 
-.formtag:hover{
-    background-color: var(--gris-100);
+.formtag{
+    background-color: var(--black-50);
 }
 
 .container-groups {
@@ -78,7 +78,7 @@ select option {
 }
 
 select option:hover {
-    background-color: #ccc;
+    background-color: var(--gris-90);
 }
 
 .submit {
@@ -89,8 +89,8 @@ select option:hover {
 }
 
 .submit:hover {
-    background-color: white;
-    color: var(--purple-base);
+    background-color: var(--orange-30);
+    color: var(--purple-90);
 }
 
 .explicacion-content {
@@ -115,7 +115,7 @@ select option:hover {
 .explicacion-content p {
     text-align: justify;
 }
-
+    
 @media screen and (width < 488px) {
 
     .formtag,

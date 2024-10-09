@@ -40,6 +40,7 @@ html {
     /* Colores principales*/
     --black: #000000;
     --white: #ffffff;
+    --black-50: #05010183 ;
 
 
     /* Scala de grises */
@@ -48,7 +49,7 @@ html {
     --gris-80: #626262 ;
     --gris-60: #949494 ;
     --gris-40: #C5C5C5 ;
-    --gris-20: #050101 ;
+    --gris-20: #F6F6F6 ;
 
     /* Escala de morados */
     --purple-base: #b85bda;

@@ -88,9 +88,9 @@
 }
 
 .dropdown-content a:hover {
-    color: var(--purple-70);
+    color: var(--purple-40);
     border-bottom: .1rem solid var(--purple-20);
-    text-shadow: 0 .1rem .1rem var(--purpe);
+    text-shadow: 0 .1rem .1rem var(--purple-90);
 }
 
 @media screen and (width <= 390px) {
@@ -117,14 +117,5 @@
     }
     .dropdown-content a {
         padding: 0rem;
-    }
-
-    .dropdown-content .items:first-child{
-        order: 1;
-        border: 1px solid orange;
-    }
-
-    .dropdown-content .items:nth-child(2){
-        order: 2;
     }
 }

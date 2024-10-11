@@ -111,7 +111,7 @@
     }
 }
 
-@media screen and (width < 760px) {
+@media screen and (width < 768px) {
     .content {
         display: flex;
         flex-direction: column;

@@ -6,6 +6,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-family: var(--font-subtitle);
+}
+
 .banner {
     width: 99vw;
     position: relative;
@@ -88,7 +92,7 @@ a {
 
 .stack-tech h3 {
     font-size: 1.7rem;
-    color: var(--purple-70);
+    color: var(--purple-40);
 }
 
 .stack-tech .container-tech {

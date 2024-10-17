@@ -11,7 +11,7 @@
 .nav-title {
     margin-left: 2rem;
     font-size: var(--h3-size);
-    color: var(--purple-base);
+    color: var(--purple-40);
     border: .1rem solid transparent;
     transition: all .5s ease-in-out;
 }
@@ -53,7 +53,7 @@
 .dropbtn,
 .items .a-item {
     text-decoration: none;
-    color: var(--purple-base);
+    color: var(--purple-40);
     height: 35px;
 }
 
@@ -81,7 +81,7 @@
     padding: .2rem;
     border-bottom: .1rem solid transparent;
     transform: translateX(5%);
-    color: var(--purple-base);
+    color: var(--purple-40);
     transition: all .2s ease-in-out;
 }
 

@@ -11,12 +11,13 @@
 .formtag,
 .explicacion {
     width: 45%;
+    font-size: var(--font-subtitle);
 }
 
 .formtag {
     padding: 2rem;
     border-radius: .5rem;
-    border: .2rem solid var(--purple-base);
+    border: .2rem solid var(--purple-40);
     transition: all .1s ease-in-out;
     font-size: var(--h5-size);
 }
@@ -65,7 +66,7 @@ select {
     margin: .6rem 0;
     background-color: transparent;
     border: 0;
-    border-bottom: .1rem solid var(--purple-base);
+    border-bottom: .1rem solid var(--purple-40);
     outline: none;
     border-radius: .2rem;
     color: var(--white);
@@ -88,7 +89,7 @@ select option:hover {
 }
 
 .submit {
-    background-color: var(--purple-base);
+    background-color: var(--purple-40);
     border: none;
     padding: .7rem;
     border-radius: .4rem;
@@ -115,7 +116,7 @@ select option:hover {
 }
 
 .explicacion-content h1 {
-    color: var(--purple-base);
+    color: var(--purple-40);
 }
 
 .explicacion-content p {

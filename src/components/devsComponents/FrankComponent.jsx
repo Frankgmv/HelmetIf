@@ -6,7 +6,7 @@ const FrankComponent = () => {
   return (
     <div className="container_section">
 
-      <ContentComponent path='frank.png' titulo='Me llamo Frank' contenido={'Soy una persona con una sólida base de conocimientos adquiridos a través de varios proyectos realizados durante sus estudios y diversos programas realizados simultáneamente a estos. Estas experiencias me han proporcionado aptitudes y actitudes las cuales crecen con el tiempo. las cuales me han sido valiosas para crear y construir en el sector TI.'} cabezera='Hey‼️' pie='Conece más sobre él' link={'https://www.instagram.com/franko_mv/'} />
+      <ContentComponent path='frank_2.jpg' titulo='Me llamo Frank' contenido={'Soy una persona con una sólida base de conocimientos adquiridos a través de varios proyectos realizados durante sus estudios y diversos programas realizados simultáneamente a estos. Estas experiencias me han proporcionado aptitudes y actitudes las cuales crecen con el tiempo. las cuales me han sido valiosas para crear y construir en el sector TI.'} cabezera='Hey‼️' pie='Conece más sobre él' link={'https://www.instagram.com/franko_mv/'} />
 
       <ContentComponent path='habilidades.png' titulo='¿Y cuales son?' contenido={'Mi inclinación al autoaprendizaje y aporte de ideas productivas en los retos; Ayudar a generar soluciones rápidas y precisas en los entornos profesionales. Mis características principales son la responsabilidad y compromiso, siempre dando lo mejor en cada una de las tareas que realizó en en la cotidianidad.'} cabezera='Ahora sus capacidades' pie='Visita su Linkedin' link="https://www.linkedin.com/in/frankgmv/" />
       

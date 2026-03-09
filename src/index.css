@@ -94,7 +94,7 @@ html {
     src: url(/src/assets/fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     :root {
         color:var(--black);
         background-color: var(--white);
@@ -107,7 +107,7 @@ html {
     button {
         background-color: var(--gris-95);
     }
-}
+} */
 
 @media screen and (790px > width) {
     html {
